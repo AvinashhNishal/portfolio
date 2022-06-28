@@ -6,6 +6,7 @@ body {
   align-items: center;
   background: #252839;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 .about {
