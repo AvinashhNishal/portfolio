@@ -6,7 +6,6 @@ body {
   align-items: center;
   background: #252839;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 
 .about {
@@ -16,17 +15,17 @@ body {
 .Namehead {
   text-align: center;
   font-family: "Poppins";
-  font-size: 2.5em;
   color: #252839;
-  -webkit-text-stroke: 1vh #32649d;
+  -webkit-text-stroke: .3vw #32649d;
   text-transform: uppercase;
   display: block;
 }
 
 .Namehead:hover {
-  color: #329d52;
-  transition: ease 1s;
-  font-size: 3em;
+  color: #70e9ef;
+  transition: ease 2s;
+  font-size: 11vw;
+  -webkit-text-stroke: .3vw #c73926;
 }
 
 .Namehead:not(:hover) {
@@ -35,17 +34,40 @@ body {
   font-size: 10vw;
 }
 
+.cya-head  {
+  text-align: center;
+  font-family: "Poppins";
+  color: #252839;
+  -webkit-text-stroke: .2vw #32649d;
+  text-transform: uppercase;
+  display: block;
+  word-spacing: 1vw;
+  padding-top: 5vw;
+}
+
+.cya-head:hover {
+  color: #a35fdf;
+  transition: ease 2s;
+  font-size: 6vw;
+  -webkit-text-stroke: .2vw #69df95;
+}
+
+.cya-head:not(:hover) {
+  color: #252839;
+  transition: ease 1s;
+  font-size: 5vw;
+}
+
 .navlinks {
   padding-top: 0.7cm;
   text-align: right;
   padding-right: 1cm;
   word-spacing: 1cm;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
 }
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   color: lightblue;
   transform: 0.2s;
   overflow: hidden;
@@ -65,12 +87,13 @@ a:hover {
 
 .instacolor {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   word-spacing: 2vh;
   border: darkslategray solid 1vh;
   border-radius: 1rem 1rem 1rem 1rem;
   display: block;
   margin: 1vw 10vw;
+  font-family: "Poppins";
 }
 .instacolor:not(:hover) {
   color: lightblue;
@@ -79,11 +102,12 @@ a:hover {
 
 .aboutmeee {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3.5vw;
   word-spacing: 1vw;
   border-radius: 1rem 1rem 1rem 1rem;
   display: block;
   border: darkslategray solid 1vh;
+  font-family: "Poppins";
 }
 
 .aboutmeee:not(:hover) {
@@ -92,11 +116,12 @@ a:hover {
 }
 
 .instaimg {
-  width: 35vw;
+  width: 5vw;
   padding-top: 10vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 1cm;
 }
 
 .nmehd {
@@ -108,11 +133,8 @@ a:hover {
   margin: 1vw 20vw;
 }
 
-/*Name Tag*/
-.scannt {
-  text-align: center;
-  color:  lightblue;
-  text-transform: uppercase;
-  word-spacing: 1vw;
-  font-family: sans-serif;
+.insta2 {
+  padding-bottom: 5vw;
 }
+
+.instacolor:hover + .aboutmeee{ color: #329d52; }
