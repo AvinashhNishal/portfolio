@@ -1,8 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap");
+
 body {
     justify-content: center;
 }
 
-.Abouthead {
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.About-head {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 5vw;
+    font-size: 5vw;
+}
+
+.about-description {
+    text-align: center;
+}
+
+.des-div {
+    margin: 1vw 22vw 1vw 22vw;
 }
