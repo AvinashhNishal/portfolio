@@ -5,20 +5,33 @@ body {
   justify-content: center;
   align-items: center;
   background: #252839;
-  font-family: "Poppins", sans-serif;
 }
 
-.about {
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/*NavBar*/
+.navlinks {
+  padding-top: 0.7cm;
+  text-align: right;
+  padding-right: 1cm;
+  word-spacing: 1cm;
+}
+
+.aboutnav {
   word-spacing: 0.1cm;
 }
 
+/*NameHead*/
 .Namehead {
   text-align: center;
-  font-family: "Poppins";
   color: #252839;
   -webkit-text-stroke: .3vw #32649d;
   text-transform: uppercase;
   display: block;
+  font-size: 10vw;
 }
 
 .Namehead:hover {
@@ -29,43 +42,15 @@ body {
 }
 
 .Namehead:not(:hover) {
-  color: #252839;
   transition: ease 1s;
-  font-size: 10vw;
 }
 
-.cya-head  {
-  text-align: center;
-  font-family: "Poppins";
-  color: #252839;
-  -webkit-text-stroke: .2vw #32649d;
-  text-transform: uppercase;
-  display: block;
-  word-spacing: 1vw;
-  padding-top: 5vw;
+.name-head-nav {
+  margin: 4vw 20vw;
+  margin-top: 0vw;
 }
 
-.cya-head:hover {
-  color: #a35fdf;
-  transition: ease 2s;
-  font-size: 6vw;
-  -webkit-text-stroke: .2vw #69df95;
-}
-
-.cya-head:not(:hover) {
-  color: #252839;
-  transition: ease 1s;
-  font-size: 5vw;
-}
-
-.navlinks {
-  padding-top: 0.7cm;
-  text-align: right;
-  padding-right: 1cm;
-  word-spacing: 1cm;
-  font-family: "Poppins";
-}
-
+/*a Tags*/
 a {
   text-decoration: none;
   color: lightblue;
@@ -78,63 +63,104 @@ a:hover {
   transition: ease 1s;
 }
 
-
-* {
-  font-family: "Poppins";
-  box-sizing: border-box;
-}
-
-
-.instacolor {
+/*Instagram*/
+.insta-link {
   text-align: center;
   font-size: 3vw;
   word-spacing: 2vh;
-  border: darkslategray solid 1vh;
-  border-radius: 1rem 1rem 1rem 1rem;
   display: block;
   margin: 1vw 10vw;
-  font-family: "Poppins";
 }
-.instacolor:not(:hover) {
+.insta-link:not(:hover) {
   color: lightblue;
   transition: ease 1s;
 }
 
-.aboutmeee {
+.insta {
+  padding-bottom: 5vw;
+}
+
+/*Instagram Shake Effect*/
+.insta-div:hover .insta-link {
+  animation:  shake 0.8s,
+  changecolor 0.8s;
+}
+
+/*About Me*/
+.aboutme {
   text-align: center;
   font-size: 3.5vw;
   word-spacing: 1vw;
-  border-radius: 1rem 1rem 1rem 1rem;
   display: block;
-  border: darkslategray solid 1vh;
-  font-family: "Poppins";
 }
 
-.aboutmeee:not(:hover) {
+.aboutme:not(:hover) {
   color: lightblue;
   transition: ease 0.5s;
 }
 
-.instaimg {
-  width: 5vw;
-  padding-top: 10vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 1cm;
-}
-
-.nmehd {
-  margin: 4vw 20vw;
-  margin-top: 0vw;
-}
-
-.aboutwt {
+.about-div {
   margin: 1vw 20vw;
 }
 
-.insta2 {
-  padding-bottom: 5vw;
+/*About Me Effect*/
+.about-div:hover .aboutme{
+  animation:  shakeme 0.8s  ;
 }
 
-.instacolor:hover + .aboutmeee{ color: #329d52; }
+/*Cya*/
+.cya-head  {
+  text-align: center;
+  color: #252839;
+  -webkit-text-stroke: .2vw #32649d;
+  text-transform: uppercase;
+  display: block;
+  word-spacing: 1vw;
+  padding-top: 5vw;
+  font-size: 5vw;
+}
+
+.cya-head:hover {
+  transition: ease 2s;
+  font-size: 6vw;
+  -webkit-text-stroke: .2vw #69df95;
+}
+
+.cya-head:not(:hover) {
+  transition: ease 1s;
+}
+
+/*Animations*/
+/*X Shake*/
+@keyframes shake{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(25px);
+  }
+    
+  50%{
+    transform: translateX(-25px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+} 
+
+/*Y Shake*/
+@keyframes shakeme{
+  0%{
+    transform: translateY(0)
+  }
+  25%{
+    transform: translateY(25px);
+  }
+    
+  50%{
+    transform: translateY(-25px);
+  }
+  100%{
+    transform: translateY(0px);
+  } 
+}
