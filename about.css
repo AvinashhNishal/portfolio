@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 body {
     justify-content: center;
+    background: #25252a;
 }
 
 * {
@@ -21,4 +23,54 @@ body {
 
 .des-div {
     margin: 1vw 22vw 1vw 22vw;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.btn-1 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #42fbf2;
+    position: relative;
+    z-index: 1;
+    background-color: #25252a;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-1:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-1::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42fbf2;
+}
+
+.btn-1:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
